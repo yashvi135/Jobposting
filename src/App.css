@@ -1,38 +1,48 @@
 .App {
-  text-align: center;
+  margin: 30px;
+  /* text-align: center; */
 }
+h1{ color: #008060; }
+h2{ font-weight: bolder; }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input[type=text], select, textarea{
+  width: 40%;
+  padding: 15px;
+  margin: 5px 10px 22px 10px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+input[type=submit] {
+  background-color: #008060;
   color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 10px;
 }
+input[type=button] {
+  color: #008060;
+  padding: 12px 20px;
+  border-width: thin;
+  border-color: #008060;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 10px;
+}
+input[type=reset] {
+  color: blue;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+input[type=text]:focus, select, textarea{
+  background-color: #ddd;
+  outline-width: thin;
+  outline-color: #008060;
+}
+input[type=submit]:hover { background-color: #044938; }
+textarea { height: 80px; }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
